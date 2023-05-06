@@ -1,0 +1,64 @@
+body{
+  /* background-color: rgb(148,211,253); */
+  background-image: url(image/wood3.jpg);
+}
+a{
+  color: #FFCCCC;
+  background-color: black;
+}
+@keyframes cat1 {
+  0% { left: 0px; opacity: 1;}
+  49.9% { left:200px; opacity: 1;}
+  50% { left:200px; opacity: 0;}
+  100% { left:0px; opacity: 0;}
+}
+@keyframes cat2 {
+  0% { left: 0px; opacity: 0;}
+  49.9% { left:200px; opacity: 0;}
+  50% { left:200px; opacity: 1;}
+  99.9% { left: 0px; opacity: 1;}
+  100% { left: 0px; opacity: 0;}
+}
+#cat1{
+  position:absolute;
+  animation-name:cat1;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+#cat2{
+  position:absolute;
+  animation-name:cat2;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+}
+#record{
+  height: 300px;width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-style: dotted;
+  border-color: black;
+  background-repeat: repeat-x;
+  background-image: url(image/wood2.png);
+  font-weight: bold;
+  color: white;
+}
+#cat{
+  height: 150px;
+}
+#chat{
+  height: 100px;width: 600px;
+  border-style: inset;
+  font-weight: bold;
+  display: flex;
+  flex-direction:row;
+  background-image: url(image/wood.jpg);
+}
+#text{
+  line-height: 100px;
+}
+#face{
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: #996666;
+}
